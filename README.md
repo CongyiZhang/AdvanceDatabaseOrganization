@@ -9,21 +9,21 @@ I learnt this in 4 stages each stage based on top the previous. Thus the 4 proje
 
 
 # Storage Manager
-'''
+
 Storage manager is an application which handles Create, Open, Close, Destroy and all the read/write
 funtionalities to the files that are stored on the disk.
 This is the basic building block for the final application. This part of the application defined methods that handles the basic read/write of a binary file. 
 This manager keeps track of the number of pages and content each page. Each page stores part or the entire table 
-'''
+
 
 # Buffer Manager
-'''
+
 This manager is built upon the previous manager. This wraps the pages suplied by the previous manager into blocks. Each block can consist of many pages. This block is referred to as *PAGE FRAMES* in this file.
 Now the functionality of this manager is handling the swaping of *Page Frames* in and out of primary memory from the secondary memory.
 There are 2 basic page replacement strategies implemented in this manager.
 * FIFO - First In First Out
 * LRU - Least Recently Used
-'''
+
 
 # Record Manager
 
